@@ -1,4 +1,4 @@
- <script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
     var historyLink = document.getElementById('historyLink');
     var earlyHistoryLink = document.getElementById('earlyHistoryLink');
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function handleLinkClick(contentId) {
         var header = document.getElementById('mainHeader');
-        header.textContent = " " + contentId.charAt(0).toUpperCase() + contentId.slice(1);
+        header.textContent = document.getElementById(contentId + 'Link').textContent;
 
         showContent(contentId);
     }
@@ -73,8 +73,4 @@ document.addEventListener('DOMContentLoaded', function() {
     var header = document.getElementById('mainHeader');
     header.textContent = "The History of Barbering";
 });
-</script> 
-
-
-
-
+</script>
