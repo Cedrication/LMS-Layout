@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var historyLink = document.getElementById('historyLink');
     var earlyHistoryLink = document.getElementById('earlyHistoryLink');
     var modernHistoryLink = document.getElementById('modernHistoryLink');
-    var quizLink = document.getElementById('quizLink');
+    var quiz = document.getElementById('quiz');
     var demoQuizLink = document.getElementById('demoQuizLink');
     var hobDemoLink = document.getElementById('hobDemoLink');
     var projectLink = document.getElementById('projectLink');
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         handleLinkClick('modernHistory');
     });
 
-    quizLink.addEventListener('click', function(event) {
+    quiz.addEventListener('click', function(event) {
         event.preventDefault();
         handleLinkClick('quiz');
     });
